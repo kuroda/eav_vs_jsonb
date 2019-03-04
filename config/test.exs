@@ -12,7 +12,7 @@ config :logger, level: :warn
 # Configure your database
 config :eav_vs_jsonb, EavVsJsonb.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "",
   database: "eav_vs_jsonb_test",
-  hostname: "localhost",
+  hostname: "db",
   pool: Ecto.Adapters.SQL.Sandbox

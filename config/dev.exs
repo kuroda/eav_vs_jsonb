@@ -50,7 +50,7 @@ config :phoenix, :plug_init_mode, :runtime
 # Configure your database
 config :eav_vs_jsonb, EavVsJsonb.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "",
   database: "eav_vs_jsonb_dev",
-  hostname: "localhost",
+  hostname: "db",
   pool_size: 10

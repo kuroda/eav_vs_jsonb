@@ -1,0 +1,14 @@
+version: '3'
+services:
+  db:
+    image: postgres:11.2-alpine
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+  web:
+    build: .
+    command: /bin/sh
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    tty: true
