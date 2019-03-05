@@ -1,4 +1,9 @@
-# Eav vs Jsonb
+# EAV vs JSONB
+
+Compare performance and storage efficiency between the Entity-Attribute-Value
+(EAV) model and the simple data model with JSONB datatype.
+
+Benchmarks are measured on Alpine 3.9 and PostgreSQL 11 using Phoenix.
 
 ## Requirements
 
