@@ -14,3 +14,5 @@ time mix run priv/repo/seeds/eav.exs
 time mix run priv/repo/updates/simple.exs
 time mix run priv/repo/updates/jsonb.exs
 time mix run priv/repo/updates/eav.exs
+
+time mix run priv/repo/selects/simple.exs
