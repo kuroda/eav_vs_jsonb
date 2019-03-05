@@ -7,5 +7,7 @@ defmodule EavVsJsonb.Repo.Migrations.CreateEavEntities do
 
       timestamps()
     end
+
+    create index(:eav_entities, :name)
   end
 end

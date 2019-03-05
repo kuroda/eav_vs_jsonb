@@ -1,5 +1,6 @@
 filenames = [
-  "simple"
+  "simple",
+  "eav"
 ]
 
 Enum.map(filenames, fn filename ->

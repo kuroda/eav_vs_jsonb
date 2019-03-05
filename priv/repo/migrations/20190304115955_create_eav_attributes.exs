@@ -8,5 +8,7 @@ defmodule EavVsJsonb.Repo.Migrations.CreateDsAttributes do
 
       timestamps()
     end
+
+    create unique_index(:eav_attributes, :name)
   end
 end
