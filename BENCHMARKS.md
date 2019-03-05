@@ -20,7 +20,7 @@ EAV:    127.223
 
 Simple:  3.378
 JSONB:   3.468
-EAV:    14.527
+EAV:     4.356
 
 ## Selects
 
