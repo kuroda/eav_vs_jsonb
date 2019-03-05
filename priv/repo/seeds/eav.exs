@@ -8,7 +8,9 @@ a4 = Repo.insert!(%EAV.Attribute{name: "j", type: "integer"})
 
 :rand.seed(:exrop, {1, 1, 1})
 
-for i <- 1..10 do
+{records, _} = Integer.parse(System.get_env("RECORDS") || "100")
+
+for i <- 1..records do
   a = :crypto.hash(:md5, "a-#{i}") |> Base.encode16(case: :lower)
   b = "b-#{i}"
   n = :rand.uniform(1000)
