@@ -4,6 +4,7 @@ alias EavVsJsonb.Repo
 
 for i <- 1..records do
   Ecto.Adapters.SQL.query!(Repo, """
-    UPDATE simple_records SET a = 'A' WHERE j = #{i};
+    UPDATE jsonb_records SET data = jsonb_set(data, '{a}', '"A"')
+    WHERE data @> '{"j":#{i}}';
   """)
 end
