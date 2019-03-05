@@ -28,4 +28,4 @@ EAV:    14.527
 
 Simple:  1.597
 JSONB:   2.350
-EAV:
+EAV:     2.772
