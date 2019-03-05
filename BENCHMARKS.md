@@ -29,3 +29,11 @@ EAV:     4.356
 Simple:  1.597
 JSONB:   2.350
 EAV:     2.772
+
+## Sort
+
+### N = 1,000
+
+Simple:  1.160
+JSONB:
+EAV:
