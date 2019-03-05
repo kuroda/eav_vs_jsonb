@@ -10,3 +10,5 @@ mix ecto.migrate.reset
 time mix run priv/repo/seeds/simple.exs
 time mix run priv/repo/seeds/jsonb.exs
 time mix run priv/repo/seeds/eav.exs
+
+time mix run priv/repo/updates/simple.exs
