@@ -15,4 +15,4 @@ config :eav_vs_jsonb, EavVsJsonb.Repo,
   password: "",
   database: "eav_vs_jsonb_test",
   hostname: "db",
-  pool: Ecto.Adapters.SQL.Sandbox
+  pool_size: 10
