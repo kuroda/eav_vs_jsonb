@@ -1,11 +1,7 @@
-# Script for populating the database. You can run it as:
-#
-#     mix run priv/repo/seeds.exs
-#
-# Inside the script, you can read and write to any of your
-# repositories directly:
-#
-#     EavVsJsonb.Repo.insert!(%EavVsJsonb.SomeSchema{})
-#
-# We recommend using the bang functions (`insert!`, `update!`
-# and so on) as they will fail if something goes wrong.
+filenames = [
+  "simple"
+]
+
+Enum.map(filenames, fn filename ->
+  Code.eval_file("./priv/repo/seeds/#{filename}.exs")
+end)
