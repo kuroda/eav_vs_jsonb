@@ -1,8 +1,8 @@
-defmodule EavVsJsonb.Repo.Migrations.CreateDsEntities do
+defmodule EavVsJsonb.Repo.Migrations.CreateEavEntities do
   use Ecto.Migration
 
   def change do
-    create table(:ds_entities) do
+    create table(:eav_entities) do
       add :name, :string, null: false
 
       timestamps()

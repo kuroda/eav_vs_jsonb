@@ -1,7 +1,7 @@
-defmodule EavVsJsonb.DS.Attribute do
+defmodule EavVsJsonb.EAV.Attribute do
   use Ecto.Schema
 
-  schema "ds_attributes" do
+  schema "eav_attributes" do
     field :name, :string
     field :type, :string
 
