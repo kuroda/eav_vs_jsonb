@@ -21,3 +21,11 @@ EAV:    127.223
 Simple:  3.378
 JSONB:   3.468
 EAV:    14.527
+
+## Selects
+
+### N = 1,000
+
+Simple:  1.597
+JSONB:   2.350
+EAV:

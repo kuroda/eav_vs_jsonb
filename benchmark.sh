@@ -16,3 +16,4 @@ time mix run priv/repo/updates/jsonb.exs
 time mix run priv/repo/updates/eav.exs
 
 time mix run priv/repo/selects/simple.exs
+time mix run priv/repo/selects/jsonb.exs
