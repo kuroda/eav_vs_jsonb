@@ -1,6 +1,7 @@
 filenames = [
   "simple",
-  "eav"
+  "eav",
+  "jsonb"
 ]
 
 Enum.map(filenames, fn filename ->
