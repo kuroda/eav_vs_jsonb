@@ -11,8 +11,10 @@ a4 = Repo.insert!(%EAV.Attribute{name: "j", type: "integer"})
 {records, _} = Integer.parse(System.get_env("RECORDS") || "100")
 
 for i <- 1..records do
+  r = rem(i, 4)
+
   a = :crypto.hash(:md5, "a-#{i}") |> Base.encode16(case: :lower)
-  b = "b-#{i}"
+  b = ~w(alpha bravo charlie delta) |> Enum.at(r)
   n = :rand.uniform(1000)
 
   e = Repo.insert!(%EAV.Entity{name: "record"})
