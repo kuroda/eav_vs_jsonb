@@ -34,6 +34,12 @@ EAV:     2.772
 
 ### N = 1,000
 
-Simple:  1.160
-JSONB:
+Simple:  1.070
+JSONB:   1.081
+EAV:
+
+### N = 10,000
+
+Simple:  1.227
+JSONB:   1.141
 EAV:
