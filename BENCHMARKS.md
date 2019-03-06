@@ -35,14 +35,16 @@ EAV:     2.772
 ### N = 1,000
 
 Simple:   0.865
-JSONB:    1.612 (on single column)
+JSONB:    1.612
+JSONB:    0.900 (with index)
 
 ### N = 10,000
 
 Simple:   2.330
 JSONB:   54.092
+JSONB:    2.850 (with index)
 
-## Sort (on twon columns)
+## Sort (on two columns)
 
 ### N = 1,000
 
