@@ -1,6 +1,12 @@
+import Ecto.Query
 alias EavVsJsonb.Repo
+alias EavVsJsonb.JSONB.Record
 
-Ecto.Adapters.SQL.query!(Repo, """
-  SELECT data FROM jsonb_records
-  ORDER BY data->>'b', data->>'i'
-""")
+{records, _} = Integer.parse(System.get_env("RECORDS") || "100")
+
+for _ <- 1..records do
+  Record
+  |> order_by(fragment("data->>'b' ASC, data->'i' ASC"))
+  |> first()
+  |> Repo.one()
+end
