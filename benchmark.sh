@@ -19,5 +19,7 @@ time mix run priv/repo/selects/simple.exs
 time mix run priv/repo/selects/jsonb.exs
 time mix run priv/repo/selects/eav.exs
 
-time mix run priv/repo/sort/simple.exs
-time mix run priv/repo/sort/jsonb.exs
+time mix run priv/repo/sort/simple-1.exs
+time mix run priv/repo/sort/simple-2.exs
+time mix run priv/repo/sort/jsonb-1.exs
+time mix run priv/repo/sort/jsonb-2.exs
