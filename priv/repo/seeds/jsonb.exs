@@ -20,6 +20,7 @@ for i <- 1..records do
 
   Repo.insert!(%StringValue{
     record_id: record.id,
+    field_name: "b",
     value: record.data["b"]
   })
 end
