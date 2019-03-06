@@ -20,9 +20,10 @@ defmodule EavVsJsonb.JSONB.RecordTest do
 
     i = 123
 
-    r = Ecto.Adapters.SQL.query!(Repo, """
-      SELECT data FROM jsonb_records WHERE data @> '{"i": #{i}}'
-    """)
+    r =
+      Ecto.Adapters.SQL.query!(Repo, """
+        SELECT data FROM jsonb_records WHERE data @> '{"i": #{i}}'
+      """)
 
     data = r.rows |> Enum.at(0) |> Enum.at(0)
 
